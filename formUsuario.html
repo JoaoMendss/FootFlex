@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Usuário</title>
+    
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Borel&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+    <!-- Cabeçalho da Página -->
+    <div class="container text-center">
+        <img src="img/FF.png" style="width:200px;" title="Foot Flex">
+    </div>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Página Desativada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+        <h1>Cadastre-se:</h1>
+
+        <div class="row">
+
+            <div class="col-sm-3"></div>
+
+            <div class="col-sm-6">
+
+                <form action="#" method="POST" class="was-validated" enctype="multipart/form-data">
+
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="file" class="form-control" id="fotoUsuario" name="fotoUsuario" required>
+                        <label for="fotoUsuario">Foto</label>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="nomeUsuario" placeholder="Informe o seu nome completo" name="nomeUsuario" required>
+                        <label for="text">Nome</label>
+                    </div>
+
+                    <div class="form-floating mb-3 mt-3">
+                        <select class="form-select" id="cidadeUsuario" name="cidadeUsuario" required>
+                            <option value="curiuva">Curiúva</option>
+                            <option value="imbau">Imbaú</option>
+                            <option value="ortigueira">Ortigueira</option>
+                            <option value="reserva">Reserva</option>
+                            <option value="telemacoBorba" selected>Telêmaco Borba</option>
+                            <option value="tibagi">Tibagi</option>
+                        </select>
+                        <label for="cidadeUsuario">Cidade</label>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div>
+
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="email" class="form-control" id="emailUsuario" placeholder="Informe o seu email" name="emailUsuario" required>
+                        <label for="email">Email</label>
+                    </div>
+                    
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="password" class="form-control" id="senhaUsuario" placeholder="Informe a sua senha" name="senhaUsuario" required>
+                        <label for="pwd">Senha</label>
+                    </div>
+
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="password" class="form-control" id="confirmarSenhaUsuario" placeholder="Informe a sua senha novamente" name="confirmarSenhaUsuario" required>
+                        <label for="pwd">Confirme a Senha</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+                </form>
+
+            </div>
+
+            <div class="col-sm-3"></div>
+        
+        </div>
+    
+    </div>
+
+    <!-- Div do Rodapé (Fixa na base) -->
+    <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+        <p>
+            Interfaces para um sistema de vendas de Tênis<br>
+            Desenvolvido por
+            <b><a href="mailto:joaoluiizmendes@gmail.com?subject=Tecnologias Web">joaoluiizmendes@gmail.com</a></b> para utilização na disciplina de Tecnologias Web
+        </p>
+    </div>
+
+</body>
+
+</html>

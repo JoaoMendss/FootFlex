@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Borel&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+    <!-- Cabeçalho da Página -->
+    <div class="container text-center">
+        <img src="img/FF.png" style="width:200px;" title="Foot Flex">
+    </div>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Página Desativada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+        <div class="alert alert-info text-center" style="width:50%; margin:auto;">
+            Há <strong>08</strong> tênis diferentes disponíveis em nosso estoque! &nbsp<i class="bi bi-emoji-smile"></i>
+        </div>
+
+        <!-- Início da primeira linha da GRID -->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/tenis1.avif" title='Zoom Fly 5' alt="Zoom Fly 5">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Tênis Nike Zoom Fly 5 Masculino</b></h4>
+                        <p class="card-text"><b>R$ 1299,99</b></p>
+                        <a href="visualizarProduto.html" class="btn btn-dark">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/tenis2.avif" title='Vaporfly 3' alt="Vaporfly 3">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Tênis Nike Vaporfly 3 Masculino</b></h4>
+                        <p class="card-text"><b>R$ 2299,99</b></p>
+                        <a href="visualizarProduto2.html" class="btn btn-dark">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/tenis3.avif" title='Streakfly' alt="Streakfly">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Tênis Nike Streakfly Masculino</b></h4>
+                        <p class="card-text"><b>R$ 1399,99</b></p>
+                        <a href="visualizarProduto3.html" class="btn btn-dark">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/tenis4.avif" title='Alphafly 2' alt="Alphafly 2">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Tênis Nike Alphafly 2 Feminino</b></h4>
+                        <p class="card-text"><b>R$ 2499,99</b></p>
+                        <a href="visualizarProduto4.html" class="btn btn-dark">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da primeira linha da GRID -->
+
+        <!-- Início da segunda linha da GRID-->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/tenis5.avif" title='Pegasus 40' alt="Pegasus 40">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>Tênis Nike Pegasus 40 Feminino</b></h4>
+                        <p class="card-text"><b>R$ 799,99</b></p>
+                        <a href="visualizarProduto5.html" class="btn btn-dark">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/tenis6.avif" title='Invincible 3' alt="Invincible 3">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Tênis Nike Invincible 3 Masculino</b></h4>
+                        <p class="card-text"><b>R$ 1499,99</b></p>
+                        <a href="visualizarProduto6.html" class="btn btn-dark">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/tenis7.avif" title='Vomero 16' alt="Vomero 16">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Tênis Nike Vomero 16 Masculino</b></h4>
+                        <p class="card-text"><b>R$ 599,99</b></p>
+                        <a href="visualizarProduto7.html" class="btn btn-dark">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/tenis8.avif" title='Zoom Fy 5' alt="Zoom Fly 5">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Tênis Nike Zoom Fly 5 Feminino</b></h4>
+                        <p class="card-text"><b>R$ 1039,99</b></p>
+                        <a href="visualizarProduto8.html" class="btn btn-dark">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da segunda linha da GRID -->
+
+    </div>
+
+    <!-- Div do Rodapé (Fixa na base) -->
+    <div class="mt-5 bg-dark text-white text-center fixed-bottom">
+        <p>
+            Interfaces para um sistema de vendas de Tênis<br>
+            Desenvolvido por
+            <b><a href="mailto:joaoluiizmendes@gmail.com?subject=Tecnologias Web">joaoluiizmendes@gmail.com</a></b> para utilização na disciplina de Tecnologias Web
+        </p>
+    </div>
+
+</body>
+</html>
